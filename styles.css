@@ -77,7 +77,10 @@ button{
 }
 
 .center{
-    padding-left: 25rem;
+    display: block;
+    margin: auto;
+    margin-left: 30%;
+    margin-right: 15%;
     
   }
 
