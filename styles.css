@@ -1,0 +1,18 @@
+:root {
+    --pig-pink: #FCA5A5;
+}
+textarea{
+  width: 60%;
+  height: 20vh;
+  display: block;
+  padding: 1rem 1rem;
+  margin: 1rem;
+}
+
+#output{
+    border: 3px solid var(--pig-pink);
+    width: 60%;
+    height: 20vh;
+    padding: 1rem 1rem;
+    margin: 1rem;
+}
