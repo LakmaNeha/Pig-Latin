@@ -2,7 +2,7 @@ var btnTranslate = document.querySelector("#btn-translate");
 var txtInput = document.querySelector("#txt-input");
 var outputDiv = document.querySelector("#output");
 
-var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
+var serverURL = "https://api.funtranslations.com/translate/pig-latin.json"
 
 function getTranslationURL(text){
 
@@ -11,6 +11,7 @@ function getTranslationURL(text){
 
 function errorHandler(error){
     console.log("error occured", error)
+    alert("Something wrong with the server, try again after sometime.")
 }
 
 function clickHandler() {
@@ -20,7 +21,11 @@ function clickHandler() {
   var text = txtInput.value;
   fetch(getTranslationURL(text))
   .then(response => response.json())
-  .then(json => console.log(json.contents.translated))
+  .then(json => {
+      outputDiv.innerText = json.contents.translated
+      console.log(json.contents.translated)
+  })
+
   .catch(errorHandler)
 };
 

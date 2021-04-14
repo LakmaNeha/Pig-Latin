@@ -1,12 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+body{
+    font-family: 'Kaushan Script',
+     cursive;
+     margin: 0px;
+     
+}
+
 :root {
     --pig-pink: #FCA5A5;
+    
 }
+
+.adjustment{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.grow{
+    flex-grow: 1;
+}
+
 textarea{
   width: 60%;
   height: 20vh;
   display: block;
   padding: 1rem 1rem;
   margin: 1rem;
+  
+  border: 3px solid var(--pig-pink);
+
+  font-family: 'Kaushan Script',
+  cursive;
+  font-size: large;
 }
 
 #output{
@@ -15,4 +41,66 @@ textarea{
     height: 20vh;
     padding: 1rem 1rem;
     margin: 1rem;
+    background-color: white;
 }
+
+nav{
+    background-color: var(--pig-pink);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+   
+    font-size: large;
+    font-weight: bolder;
+}
+
+button{
+
+    background-color: #FCA5A5;
+    color: white;
+
+    border: none;
+    border-radius: 0.5rem;
+
+    padding: 1rem 2rem;
+    
+    font-size:20px;
+    font-weight: bold;
+    font-family: 'Kaushan Script',
+     cursive;
+    
+
+    text-align: center; 
+
+    margin: 1rem;
+    
+}
+
+.center{
+    padding-left: 25rem;
+    
+  }
+
+  .back-ground {
+    background-image: url("/images/pigbg.svg"); /* The image used */
+    
+    
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  footer{
+      padding: 2rem 10rem;
+      
+      background-color: #FCA5A5;
+      color: white;
+      text-align: center;
+   
+  }
+  
+  .line{
+    line-height: 2;
+    font-size: medium;
+  }
+  
